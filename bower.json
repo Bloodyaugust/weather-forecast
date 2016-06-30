@@ -23,6 +23,7 @@
     "mustache.js": "^2.2.1",
     "fetch": "^1.0.0",
     "es6-promise": "^3.2.1",
-    "Materialize": "materialize#^0.97.6"
+    "Materialize": "materialize#^0.97.6",
+    "moment": "^2.13.0"
   }
 }

@@ -21,3 +21,11 @@ h5 {
 h6 {
   @include font-size(12px);
 }
+
+.current i, .weather-attribute, .weather-status {
+  font-size: 60px;
+}
+
+.weather-summary {
+  font-size: 30px;
+}

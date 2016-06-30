@@ -9,3 +9,15 @@ body {
   text-align: center;
   width: 100vw;
 }
+
+.current p {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+p.weather-status {
+  padding-bottom: 10px;
+}
+p.weather-summary {
+  padding-top: 10px;
+}

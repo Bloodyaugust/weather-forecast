@@ -1,4 +1,4 @@
-/// <binding ProjectOpened='dev' />
+3001/// <binding ProjectOpened='dev' />
 var Mustache = require('mustache');
 
 module.exports = function(grunt) {
@@ -150,21 +150,21 @@ module.exports = function(grunt) {
         files: ['app/templates/**/*.html'],
         tasks: ['includeSource:dev', 'wiredep:dev', 'includeHTMLPartials:dev'],
         options: {
-          livereload: 35729
+          livereload: 3001
         }
       },
       javascript: {
         files: ['!app/**/*.test.js', 'app/**/*.js'],
         tasks: ['jshint'],
         options: {
-          livereload: 35729
+          livereload: 3001
         }
       },
       sass: {
         files: ['app/styles/**/*.scss'],
         tasks: ['sass:dev'],
         options: {
-          livereload: 35729
+          livereload: 3001
         }
       }
     },
