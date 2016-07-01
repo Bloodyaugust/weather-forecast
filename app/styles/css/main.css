@@ -39,15 +39,25 @@ body {
   text-align: center;
   width: 100vw; }
 
-.current p {
-  padding-bottom: 30px;
-  padding-top: 30px; }
+header {
+  margin-bottom: 20px; }
 
 p.weather-status {
   padding-bottom: 10px; }
 
 p.weather-summary {
   padding-top: 10px; }
+
+.current p {
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.weather-status i {
+  margin-bottom: 10px;
+  width: 100%; }
+  @media (max-width: 767px) {
+    .weather-status i {
+      margin-bottom: 20px; } }
 
 * {
   font-family: 'Oswald', sans-serif;
@@ -78,11 +88,33 @@ h6 {
   font-size: 12px;
   font-size: 0.75rem; }
 
+.current .card-title {
+  font-size: 32px;
+  font-size: 2rem; }
+
 .current i, .weather-attribute, .weather-status {
-  font-size: 60px; }
+  font-size: 30px;
+  font-size: 1.875rem; }
+  @media (max-width: 767px) {
+    .current i, .weather-attribute, .weather-status {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+.geolocation p {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .weather-summary {
-  font-size: 30px; }
+  font-size: 30px;
+  font-size: 1.875rem; }
+
+.weather-status i {
+  font-size: 60px;
+  font-size: 3.75rem; }
+
+.weather-short-attributes, .weather-short-attributes span {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .invalid {
   color: red; }
@@ -93,5 +125,12 @@ h6 {
   color: green; }
   .valid input {
     color: green; }
+
+.content {
+  transform: translateX(-100vw);
+  transition: transform 1s; }
+
+.show.content {
+  transform: translateX(0vw); }
 
 /*# sourceMappingURL=main.css.map */

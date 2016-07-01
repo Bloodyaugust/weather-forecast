@@ -22,10 +22,30 @@ h6 {
   @include font-size(12px);
 }
 
+.current .card-title {
+  @include font-size(32px);
+}
+
 .current i, .weather-attribute, .weather-status {
-  font-size: 60px;
+  @include font-size(30px);
+
+  @include mobile {
+    @include font-size(20px);
+  }
+}
+
+.geolocation p {
+  @include font-size(20px);
 }
 
 .weather-summary {
-  font-size: 30px;
+  @include font-size(30px);
+}
+
+.weather-status i {
+  @include font-size(60px);
+}
+
+.weather-short-attributes, .weather-short-attributes span {
+  @include font-size(20px);
 }

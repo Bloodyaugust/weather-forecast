@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Bloodyaugust/weather-forecast#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bower": "^1.7.9",
     "compression": "^1.6.2",
     "express": "^4.13.4",
@@ -39,6 +40,7 @@
     "grunt-include-source": "^0.7.1",
     "grunt-sass": "^1.1.0",
     "grunt-wiredep": "^3.0.1",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "node-fetch": "^1.5.3"
   }
 }

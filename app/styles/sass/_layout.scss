@@ -9,10 +9,8 @@ body {
   text-align: center;
   width: 100vw;
 }
-
-.current p {
-  padding-bottom: 30px;
-  padding-top: 30px;
+header {
+  margin-bottom: 20px;
 }
 
 p.weather-status {
@@ -20,4 +18,18 @@ p.weather-status {
 }
 p.weather-summary {
   padding-top: 10px;
+}
+
+.current p {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.weather-status i {
+  margin-bottom: 10px;
+  width: 100%;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
 }
