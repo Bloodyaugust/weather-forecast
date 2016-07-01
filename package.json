@@ -1,6 +1,6 @@
 {
   "name": "weather-forecast",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple and effective current weather and 5 day forecast dashboard.",
   "main": "index.js",
   "scripts": {
