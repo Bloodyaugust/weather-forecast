@@ -30,6 +30,16 @@ module.exports = function(grunt) {
         }, {
           cwd: 'app/',
           expand: true,
+          src: ['styles/font/*'],
+          dest: 'public/'
+        }, {
+          cwd: 'app/',
+          expand: true,
+          src: ['styles/css/*', '!main.*'],
+          dest: 'public/'
+        }, {
+          cwd: 'app/',
+          expand: true,
           src: ['favicon.ico'],
           dest: 'public/'
         }]
