@@ -20,7 +20,7 @@ $(function () {
         current = weather.currently,
         daily = weather.daily.data;
 
-      daily.splice(0, 2);
+      daily.splice(0, 1);
       daily.splice(4);
 
       current.temperature = current.temperature.toFixed();
