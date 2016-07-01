@@ -13,7 +13,7 @@ $(function () {
   };
 
   if (!navigator.geolocation) {
-    setView('geolocation', {
+    setView('error', {
       title: 'An Error, There Is!',
       message: 'Getting location, your browser does not support. Try a different one, you must.'
     });
@@ -22,6 +22,10 @@ $(function () {
       fetch('weather?lat=' + position.coords.latitude + '&long=' + position.coords.longitude).then(function (resp) {
         return resp.json();
       }).then(function (json) {
+        if (json.code !== 200) {
+          throw json;
+        }
+
         var weather = json.weather,
           current = weather.currently,
           daily = weather.daily.data;
@@ -43,9 +47,12 @@ $(function () {
         }
 
         setView('weather', weather);
+      })
+      .catch(function (error) {
+        setView('error', error);
       });
     }, function () {
-      setView('geolocation', {
+      setView('error', {
         title: 'An Error, There Is!',
         message: 'While your location we are missing, get your weather: we cannot. Allow us to access it, then try again, you must.'
       });

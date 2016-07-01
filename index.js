@@ -26,9 +26,16 @@ app.get('/weather', function (req, res) {
   })
   .then(function (json) {
     res.json({
-        code: 200,
-        weather: json
-      });
+      code: 200,
+      weather: json
+    });
+  })
+  .catch(function (error) {
+    res.status(500).json({
+      code: 500,
+      title: 'An Error, There Is!',
+      message: 'Trouble while retrieving weather data, there was. Try again later, you will.'
+    });
   });
 });
 
